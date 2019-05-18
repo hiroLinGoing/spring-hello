@@ -4,11 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="user" class="com.hiro.entity.User">
+    <bean id="user" scope="prototype" class="com.hiro.start.entity.User">
         <property name="name" value="小花"/>
     </bean>
 
-    <bean id="userInfoService" class="com.hiro.service.UserInfoService">
+    <bean id="userInfoService" class="com.hiro.start.service.UserInfoService">
         <property name="userFrom" value="web"></property>
         <property name="user" ref="user"></property>
     </bean>
