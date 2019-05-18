@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="user" class="com.hiro.entity.User">
+        <property name="name" value="小花"/>
+    </bean>
+
+    <bean id="userInfoService" class="com.hiro.service.UserInfoService">
+        <property name="userFrom" value="web"></property>
+        <property name="user" ref="user"></property>
+    </bean>
+</beans>
