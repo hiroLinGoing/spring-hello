@@ -1,5 +1,5 @@
 # spring-hello
-[csdn blog](https://blog.csdn.net/persistinlife/article/details/90314082)
+[csdn blog](https://blog.csdn.net/persistinlife/article/category/8960070)
 spring笔记
 ##### 1 控制反转 依赖注入
 - **ioc** 控制反转，以往对象的创建式通过new方式，现在对应都由spring管理通过反射形式将对象初始化放在spring容器中。
